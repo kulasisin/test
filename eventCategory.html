@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- icofont -->
+
+
+<!-- google icon -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap" rel="stylesheet">
+
+<!-- swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  <script type="module" crossorigin src="/test/assets/eventCategory-3dec6472.js"></script>
+  <link rel="modulepreload" crossorigin href="/test/assets/orderSuccess-7a129666.js">
+  <link rel="modulepreload" crossorigin href="/test/assets/13-e08f210e.js">
+  <link rel="stylesheet" href="/test/assets/orderSuccess-8c316dce.css">
+</head>
+
+<body>
+    <nav>
+    <section class="py-12 py-md-4 border-bottom border-2">
+        <div class="container d-flex justify-content-between">
+            <div class="d-flex">
+                <a href="./index.html" class="d-flex align-items-center me-md-5 link-primary">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="logo" class="me-4 me-md-3 logo">
+                    <h1 class="d-none d-md-flex align-items-center fs-2">7TAO<span
+                            class="ms-1 fs-6 ff-notoSerif fw-bold">活動訂票網</span></h1>
+                </a>
+                <form class="seach__input d-flex">
+                    <div class="input-group header__searchBlock">
+                        <input type="text" class="form-control ps-4 border-2" placeholder="探索活動"
+                            aria-label="searchEvent" aria-describedby="button-search">
+                        <button
+                            class="btn btn-primary d-flex justify-content-center align-items-center text-secondary fs-5 btn-search"
+                            type="button" id="button-search">
+                            <i class="icofont-search-1"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+    
+            <ul class="d-none d-lg-flex list-unstyled align-items-center header__list">
+                <li class="me-4">
+                    <a href="#" class="fs-18">
+                        <i class="icofont-ui-file"></i>
+                        REGISTER
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html" class="fs-18">
+                        <i class="icofont-ui-user"></i>
+                        LOGIN
+                    </a>
+                </li>
+            </ul>
+    
+            <div class="d-lg-none">
+                <a class="d-flex align-items-center px-12 py-1 border border-dark rounded-2 h-100"
+                    data-bs-toggle="collapse" href="#collapseHamburger" role="button" aria-expanded="false"
+                    aria-controls="collapseHamburger">
+                    <span class="material-symbols-outlined">menu</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="collapse" id="collapseHamburger">
+        <ul class="container list-unstyled py-4 border-bottom border-2">
+            <li class="mb-3">
+                <a href="#" class="fs-18">
+                    <i class="icofont-ui-file"></i>
+                    REGISTER
+                </a>
+            </li>
+            <li>
+                <a href="#" class="fs-18">
+                    <i class="icofont-ui-user"></i>
+                    LOGIN
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="container mt-3 mt-lg-32">
+        <section>
+            <div
+                class="d-flex justify-content-between align-items-center px-12 px-lg-4 py-3 py-lg-32 mb-4 mb-lg-32 border border-3">
+                <h2 class="fs-4 fs-lg-64">EVENT</h2>
+                <p class="fs-lg-2 ff-notoSerif fw-bold">所有活動</p>
+            </div>
+            <div id="eventTagList" class="d-flex flex-wrap mb-32"></div>
+        </section>
+        <ul class="list-unstyled row row-cols-1 row-cols-lg-3 gy-4 gy-lg-5 gx-lg-4 mb-32 mb-lg-60"
+            id="recentActivityList">
+        </ul>
+    </div>
+    <nav aria-label="Page navigation example" class="d-flex justify-content-center mb-5 mb-lg-60">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link px-10" href="#" aria-label="Previous">
+                    <i class="icofont-arrow-left"></i>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link px-10" href="#" aria-label="Next">
+                    <i class="icofont-arrow-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <footer class="py-4 py-lg-32 text-center border-top border-3">
+    <p class="ff-notoSans fs-14 fs-lg-6">© 7TAO七逃. All Rights Reserved</p>
+</footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content">
+                <div class="modal-header border-3">
+                    <h5 class="modal-title w-100 text-center fs-4" id="exampleModalLabel">立即成為7TAO會員</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-32 py-lg-5 text-center">
+                    <p class="mb-4 ff-notoSans">
+                        立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。
+                        您也可以先報名活動，日後再註冊帳號，
+                        系統會在認證您的Email後，協助您找回舊的訂單。
+                    </p>
+                    <button type="button" class="btn btn-primary py-2 px-32">立即成為會員</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
