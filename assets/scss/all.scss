@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+//utils
+@import "./utils/variables";
+
+//bootstrap all scss
+@import "~bootstrap/scss/bootstrap";
+
+@import "./base";
+@import "./utils/mixin";
+@import "./utils/utils";
+
+//layout
+@import "./layout/header";
+
+//components
+@import "./components/button";
+@import "./components/card";
+@import "./components/tag";
+@import "./components/table";
+
+@import "./components/payList";
+
+//pages
+@import "./pages/index";
+@import "./pages/login";
+@import "./pages/eventDetail";
+@import "./pages/checkout";

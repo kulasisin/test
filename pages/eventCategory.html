@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('./layout/head.ejs'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header.ejs'); -%>
+    <div class="container mt-3 mt-lg-32">
+        <section>
+            <div
+                class="d-flex justify-content-between align-items-center px-12 px-lg-4 py-3 py-lg-32 mb-4 mb-lg-32 border border-3">
+                <h2 class="fs-4 fs-lg-64">EVENT</h2>
+                <p class="fs-lg-2 ff-notoSerif fw-bold">所有活動</p>
+            </div>
+            <div id="eventTagList" class="d-flex flex-wrap mb-32"></div>
+        </section>
+        <ul class="list-unstyled row row-cols-1 row-cols-lg-3 gy-4 gy-lg-5 gx-lg-4 mb-32 mb-lg-60"
+            id="recentActivityList">
+        </ul>
+    </div>
+    <nav aria-label="Page navigation example" class="d-flex justify-content-center mb-5 mb-lg-60">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link px-10" href="#" aria-label="Previous">
+                    <i class="icofont-arrow-left"></i>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link px-10" href="#" aria-label="Next">
+                    <i class="icofont-arrow-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <%- include('./layout/footer.ejs'); -%>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content">
+                <div class="modal-header border-3">
+                    <h5 class="modal-title w-100 text-center fs-4" id="exampleModalLabel">立即成為7TAO會員</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-32 py-lg-5 text-center">
+                    <p class="mb-4 ff-notoSans">
+                        立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。
+                        您也可以先報名活動，日後再註冊帳號，
+                        系統會在認證您的Email後，協助您找回舊的訂單。
+                    </p>
+                    <button type="button" class="btn btn-primary py-2 px-32">立即成為會員</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/eventCategory.js"></script>
+</body>

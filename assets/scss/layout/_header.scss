@@ -1,0 +1,32 @@
+.logo{
+    @include size(40px, 40px);
+
+    @include lg{
+        @include size(53px, 53px);
+    }
+}
+
+.header__searchBlock{
+    max-width: 160px;
+    
+    @include lg{
+        max-width: 335px;
+    }
+
+    
+    .btn-search{
+        @include size(40px, 40px);
+
+        @include lg{
+            @include size(55px, 55px);
+        }
+    }
+}
+
+.header__list{
+    a{
+        &:hover{
+            color: #9C9E18;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+.checkout, .payment{
+    &__sparkleImg{
+        @include size(32px, 32px);
+    }
+}
